@@ -41,28 +41,28 @@ class ControlActorsAction(Action):
         if self._keyboard_service.is_key_down('a') and self._direction_player_1 != RIGHT: 
             self._direction_player_1 = LEFT
 
-        if self._keyboard_service.is_key_down('j') and self._direction_player_2 != RIGHT: 
+        if self._keyboard_service.is_key_down('left') and self._direction_player_2 != RIGHT: 
             self._direction_player_2 = LEFT
         
         # right
         if self._keyboard_service.is_key_down('d') and self._direction_player_1 != LEFT:
             self._direction_player_1 = RIGHT
 
-        if self._keyboard_service.is_key_down('l') and self._direction_player_2 != LEFT: 
+        if self._keyboard_service.is_key_down('right') and self._direction_player_2 != LEFT: 
             self._direction_player_2 = RIGHT
         
         # up
         if self._keyboard_service.is_key_down('w') and self._direction_player_1 != DOWN:
             self._direction_player_1 = UP
         
-        if self._keyboard_service.is_key_down('i') and self._direction_player_2 != DOWN:
+        if self._keyboard_service.is_key_down('up') and self._direction_player_2 != DOWN:
             self._direction_player_2 = UP
         
         # down
         if self._keyboard_service.is_key_down('s') and self._direction_player_1 != UP:
             self._direction_player_1 = DOWN
 
-        if self._keyboard_service.is_key_down('k') and self._direction_player_2 != UP:
+        if self._keyboard_service.is_key_down('down') and self._direction_player_2 != UP:
             self._direction_player_2 = DOWN
         
         player_1_head = players[0].get_segments()[0]
