@@ -22,6 +22,6 @@ PLAYER_2 = 1
 
 # PLAYER STARTING POSITIONS
 PLAYER_1_X = int(MAX_X / 2)
-PLAYER_1_Y = int(MAX_Y / 4)
+PLAYER_1_Y = int(MAX_Y / 2)
 PLAYER_2_X = int(MAX_X / 2) 
-PLAYER_2_Y = int(MAX_Y / 2)
+PLAYER_2_Y = int(MAX_Y / 4)
