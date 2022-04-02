@@ -1,4 +1,4 @@
-import constants
+from constants import *
 
 from game.casting.cast import Cast
 from game.casting.food import Food
@@ -21,11 +21,12 @@ def main():
     # create the cast
     cast = Cast()
     cast.add_actor("foods", Food())
-    cast.add_actor("snakes", Snake())
-    cast.add_actor("snakes", Snake())
     cast.add_actor("scores", Score())
+    cast.add_actor("snakes", Snake(PLAYER_1_X, PLAYER_1_Y, YELLOW, GREEN))
+    cast.add_actor("snakes", Snake(PLAYER_2_X, PLAYER_2_Y, YELLOW, BLUE))
+    
    
-    # start the games
+    # start the gamesa
     keyboard_service = KeyboardService()
     video_service = VideoService()
 
